@@ -1,0 +1,14 @@
+{
+  "$schema": "https://wixplosives.github.io/codux-config-schema/codux.config.schema.json",
+  "boardsPath": "_codux/boards",
+  "styling": {
+    "solution": "css modules"
+  },
+  "boardGlobalSetup": "./_codux/board-setup.ts",
+  "resolve": {
+    "alias": {
+      "~": "app",
+      "~/*": "app/*"
+    }
+  }
+}

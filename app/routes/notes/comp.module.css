@@ -1,0 +1,75 @@
+.root {
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    border-right: 1px solid black;
+    padding: 0rem;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--slate-800);
+    color: var(--white);
+}
+
+.header h1 {
+    font: var(--font-heading-l);
+}
+
+.logout {
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    background-color: var(--slate-600);
+    border-radius: 0.25rem;
+    color: var(--blue-100);
+}
+
+.logout:hover {
+    background-color: var(--blue-500);
+}
+
+.logout:active {
+    background-color: var(--blue-600);
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+}
+
+.sideBar {
+    width: 20rem;
+    background-color: var(--grey-50);
+    border-right-width: 1px;
+}
+
+.content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.link {
+    padding: 1rem;
+    font: var(--font-text-xl);
+    display: block;
+}
+
+.newNote {
+    color: var(--blue-500);
+}
+
+.note {
+    border-bottom: 1px solid rgb(229, 231, 235);
+}
+
+.noteActive {
+    background-color: var(--white);
+}

@@ -1,0 +1,26 @@
+:root {
+  --background: var(--white);
+  --inverted-background: var(--slate-800);
+  --text: #000000;
+  --invertedText: var(--white);
+
+  --font-heading-l: 700 1.8rem/2.25rem 'ui-sans-serif';
+  --font-text-xl: 400 1.25rem/1.75rem 'ui-sans-serif';
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+* {
+  border-color: #e5e7eb;
+  border-style: solid;
+  border-width: 0px;
+  box-sizing: border-box;
+}
+
+hr {
+  height: 0;
+    color: inherit;
+    border-top-width: 1px;
+}
