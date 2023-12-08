@@ -43,33 +43,9 @@
     position: relative;
 }
 
-.sideBar {
-    width: 20rem;
-    background-color: var(--grey-50);
-    border-right-width: 1px;
-}
-
 .content {
     padding: 1.5rem;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
-}
-
-.link {
-    padding: 1rem;
-    font: var(--font-text-xl);
-    display: block;
-}
-
-.newNote {
-    color: var(--blue-500);
-}
-
-.note {
-    border-bottom: 1px solid rgb(229, 231, 235);
-}
-
-.noteActive {
-    background-color: var(--white);
 }

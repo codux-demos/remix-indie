@@ -1,4 +1,4 @@
-import type { User, Note } from "@prisma/client";
+import { User, Note } from "@prisma/client";
 
 import { prisma } from "~/db.server";
 
@@ -21,6 +21,10 @@ export function getNoteListItems({ userId }: { userId: User["id"] }) {
     orderBy: { updatedAt: "desc" },
   });
 }
+
+export type NotesListItem = Awaited<
+  ReturnType<typeof getNoteListItems>
+>[number];
 
 export function createNote({
   body,

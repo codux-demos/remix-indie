@@ -1,0 +1,23 @@
+.root {
+  width: 20rem;
+  background-color: var(--grey-50);
+  border-right-width: 1px;
+}
+
+.link {
+  padding: 1rem;
+  font: var(--font-text-xl);
+  display: block;
+}
+
+.newNote {
+  color: var(--blue-500);
+}
+
+.note {
+  border-bottom: 1px solid rgb(229, 231, 235);
+}
+
+.noteActive {
+  background-color: var(--white);
+}
