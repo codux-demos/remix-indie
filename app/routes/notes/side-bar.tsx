@@ -1,7 +1,7 @@
 import { Link, NavLink } from "@remix-run/react";
 import cx from "classnames";
 
-import { NotesListItem } from "~/models/note.server";
+import type { NotesListItem } from "~/models/note.server";
 
 import styles from "./side-bar.module.css";
 

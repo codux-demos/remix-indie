@@ -1,12 +1,25 @@
 import { createRemixStub } from "@remix-run/testing";
 import { ReactNode } from "react";
 
-export function ComponentWrapper(props: { children: ReactNode }) {
+export function ComponentWrapper(props: {
+  children: ReactNode;
+  data?: object;
+}) {
   const Router = createRemixStub([
     {
       id: "root",
-      Component: () => props.children,
-      path: "/",
+      loader: () => {
+        return {
+          user: { email: "aaa@gmail.com" },
+        };
+      },
+      children: [
+        {
+          Component: () => props.children,
+          path: "/",
+          loader: () => props.data || null,
+        },
+      ],
     },
   ]);
 
