@@ -29,9 +29,11 @@ export function getRouter(): Parameters<typeof createRemixStub>[0] {
               hasErrorBoundary: true,
               ErrorBoundary: ErrorComp,
               loader: () => ({
-                id: "1",
-                title: "aaa",
-                body: "this is me pretty note",
+                note: {
+                  id: "1",
+                  title: "aaa",
+                  body: "this is me pretty note",
+                },
               }),
             },
           ],

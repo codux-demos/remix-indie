@@ -5,6 +5,7 @@
   --invertedText: var(--white);
 
   --font-heading-l: 700 1.8rem/2.25rem 'ui-sans-serif';
+  --font-heading-m: 600 1.5rem/2rem 'ui-sans-serif';
   --font-text-xl: 400 1.25rem/1.75rem 'ui-sans-serif';
 }
 
