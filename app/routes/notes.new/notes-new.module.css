@@ -1,0 +1,34 @@
+.label {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.25rem
+}
+
+.input {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    border-radius: 0.37rem;
+    border: 2px solid var(--blue-500);
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    line-height: 2rem;
+    width: 100%;
+}
+
+.error {
+    padding-top: 0.25rem;
+    color: var(--error);
+}
+
+.root {
+    font: var(--font-text-xl);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.button-row {
+    text-align: end;
+}

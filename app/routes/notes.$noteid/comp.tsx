@@ -7,6 +7,7 @@ import {
 
 import type { loader } from "./route";
 import styles from "./comp.module.css";
+import Classnames from 'classnames';
 
 export function NoteDetailsPage() {
     const data = useLoaderData<typeof loader>();
@@ -18,7 +19,7 @@ export function NoteDetailsPage() {
             <p className={styles.text}>{data.note.body}</p>
             <hr />
             <Form method="post">
-                <button type="submit" className={styles.delete}>Delete</button>
+                <button type="submit" className={Classnames(styles.delete, 'button-action')}>Delete</button>
             </Form>
         </div>
     );

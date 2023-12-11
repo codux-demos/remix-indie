@@ -6,3 +6,16 @@
 - can't seem to be able to select the hover selector (css modules)
 - and the states don't seem to work..
 - in a few cases adding a class requires reload (not sure of what) to show in the panel
+- missing rem in gap
+- can't drop elements inside label
+
+## features
+
+- add new elements to the end
+
+## TODO
+
+- submit form on load to see errors
+- types
+- fake data
+- files order

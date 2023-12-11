@@ -9,21 +9,5 @@
 }
 
 .delete {
-    border-radius: 4px;
-    background-color: var(--blue-500);
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    color: var(--white);
-    font: var(--font-text-xl);
     margin-top: 1.5rem;
-}
-
-.delete:hover {
-    background-color: var(--blue-600);
-}
-
-.delete:focus {
-    background-color: var(--blue-400);
 }

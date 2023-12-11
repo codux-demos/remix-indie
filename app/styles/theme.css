@@ -3,6 +3,7 @@
   --inverted-background: var(--slate-800);
   --text: #000000;
   --invertedText: var(--white);
+  --error: #b91c1c;
 
   --font-heading-l: 700 1.8rem/2.25rem 'ui-sans-serif';
   --font-heading-m: 600 1.5rem/2rem 'ui-sans-serif';

@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 export function ComponentWrapper(props: {
   children: ReactNode;
   data?: object;
+  actionError?: { title?: string };
 }) {
   const Router = createRemixStub([
     {
@@ -18,6 +19,10 @@ export function ComponentWrapper(props: {
           Component: () => props.children,
           path: "/",
           loader: () => props.data || null,
+          action: () =>
+            props.actionError
+              ? { errors: props.actionError, status: 400 }
+              : null,
         },
       ],
     },

@@ -5,6 +5,8 @@ import {
   NoteDetailsPage,
   ErrorComp,
 } from "../../app/routes/notes.$noteid/comp";
+import EmptyNotes from "../../app/routes/notes._index";
+import { NotesNew } from "../../app/routes/notes.new/notes-new";
 
 export function getRouter(): Parameters<typeof createRemixStub>[0] {
   return [
@@ -35,6 +37,14 @@ export function getRouter(): Parameters<typeof createRemixStub>[0] {
                   body: "this is me pretty note",
                 },
               }),
+            },
+            {
+              index: true,
+              Component: EmptyNotes,
+            },
+            {
+              path: "new",
+              Component: NotesNew,
             },
           ],
         },
