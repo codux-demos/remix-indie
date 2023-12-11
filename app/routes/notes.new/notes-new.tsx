@@ -28,7 +28,7 @@ export function NotesNew() {
       <div>
         <label className={styles.label}>
           <span>Body: </span>
-          <textarea className={styles.input} rows={8} />
+          <textarea name="body" className={styles.input} rows={8} />
         </label>
       </div>
       <div className={styles["button-row"]}>
