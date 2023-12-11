@@ -10,5 +10,9 @@
       "~": "app",
       "~/*": "app/*"
     }
+  },
+  "newComponent": {
+    "componentsPath": "app/components",
+    "templatesPath": "_codux/templates"
   }
 }
