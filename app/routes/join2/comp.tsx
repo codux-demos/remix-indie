@@ -1,7 +1,7 @@
 import { Form, Link, useActionData, useSearchParams } from "@remix-run/react";
 import { useEffect, useRef } from "react";
 
-import { action } from "../join";
+import { action } from "./route";
 
 export function Join() {
   const [searchParams] = useSearchParams();
