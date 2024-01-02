@@ -16,3 +16,13 @@
 .button-action:focus {
   background-color: var(--blue-400);
 }
+
+.form-text {
+  color: var(--grey-700);
+  font: var(--font-text-sm);
+}
+
+.link {
+  color: var(--link);
+  text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+.input-margin {
+    margin-top: 0.25rem;
+}
+
+.form-input {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #6b7280;
+    border-radius: 0.25rem;
+    font: var(--font-text-lg);
+}
+
+.page-container {
+    min-height: 100%;
+}
+
+.form-container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: 28rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
