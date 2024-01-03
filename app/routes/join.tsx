@@ -1,3 +1,4 @@
+// This file should be deleted and the `./join2` folder should be renamed.
 import type {
   ActionFunctionArgs,
   LoaderFunctionArgs,
