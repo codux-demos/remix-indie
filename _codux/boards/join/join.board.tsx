@@ -11,7 +11,4 @@ export default createBoard({
     </ComponentWrapper>
   ),
   isSnippet: false,
-  environmentProps: {
-    canvasHeight: 134,
-  },
 });

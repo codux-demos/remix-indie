@@ -23,6 +23,11 @@
 }
 
 .link {
-  color: var(--link);
+  color: var(--blue-500);
   text-decoration: underline;
+}
+
+.sub-text {
+  color: var(--grey-500);
+  font: var(--font-text-sm);
 }

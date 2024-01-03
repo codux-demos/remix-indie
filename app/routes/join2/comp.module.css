@@ -7,9 +7,13 @@
     border: 1px solid #6b7280;
     border-radius: 0.25rem;
     font: var(--font-text-lg);
+    width: 100%;
 }
 
 .page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 100%;
 }
 
@@ -27,4 +31,21 @@
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
+}
+
+.submit-button {
+    color: var(--white);
+    background: var(--blue-500);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
