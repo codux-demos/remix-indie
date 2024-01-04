@@ -1,11 +1,7 @@
 import { createRemixStub } from "@remix-run/testing";
 import { render, screen } from "@testing-library/react";
 
-import {
-  createUser,
-  deleteUserByEmail,
-  getUserByEmail,
-} from "~/models/user.server";
+import { createUser, getUserByEmail } from "~/models/user.server";
 import { createUserSession } from "~/session.server";
 
 import Notes, { loader } from "./route";
