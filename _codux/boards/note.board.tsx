@@ -2,7 +2,7 @@ import { createBoard } from "@wixc3/react-board";
 
 import { ComponentWrapper } from "_codux/board-wrappers/component-wrapper";
 
-import { NoteDetailsPage } from "../../app/routes/notes.$noteId/comp";
+import { NoteDetailsPage } from "../../app/routes/notes.$noteid/comp";
 
 export default createBoard({
   name: "note",

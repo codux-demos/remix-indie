@@ -4,7 +4,7 @@ import { NotesPage } from "../../app/routes/notes/comp";
 import {
   NoteDetailsPage,
   ErrorComp,
-} from "../../app/routes/notes.$noteId/comp";
+} from "../../app/routes/notes.$noteid/comp";
 import EmptyNotes from "../../app/routes/notes._index";
 import { NotesNew } from "../../app/routes/notes.new/notes-new";
 
