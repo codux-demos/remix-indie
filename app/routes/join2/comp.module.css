@@ -1,51 +1,56 @@
 .input-margin {
-    margin-top: 0.25rem;
+  margin-top: 0.25rem;
 }
 
 .form-input {
-    padding: 0.25rem 0.5rem;
-    border: 1px solid #6b7280;
-    border-radius: 0.25rem;
-    font: var(--font-text-lg);
-    width: 100%;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #6b7280;
+  border-radius: 0.25rem;
+  font: var(--font-text-lg);
+  width: 100%;
 }
 
 .page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
 }
 
 .form-container {
-    padding-right: 2rem;
-    padding-left: 2rem;
-    max-width: 28rem;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  max-width: 28rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .submit-button {
-    color: var(--white);
-    background: var(--blue-500);
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    border-radius: 0.25rem;
-    width: 100%;
+  color: var(--white);
+  background: var(--blue-500);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 0.25rem;
+  width: 100%;
 }
 
 .sub-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-error-text {
+  padding-top: 0.25rem;
+  color: var(--error);
 }
