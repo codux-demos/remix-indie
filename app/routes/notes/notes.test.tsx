@@ -38,7 +38,6 @@ test("render fake notes", async () => {
 
 test("render real notes (which are empty)", async () => {
   const email = "aaa@gmail.com";
-  await deleteUserByEmail(email);
 
   const user = await createUser(email, "myreallystrongpassword");
 
