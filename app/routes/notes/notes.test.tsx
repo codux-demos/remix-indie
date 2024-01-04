@@ -1,7 +1,11 @@
 import { createRemixStub } from "@remix-run/testing";
 import { render, screen } from "@testing-library/react";
 
-import { createUser, getUserByEmail } from "~/models/user.server";
+import {
+  createUser,
+  deleteUserByEmail,
+  getUserByEmail,
+} from "~/models/user.server";
 import { createUserSession } from "~/session.server";
 
 import Notes, { loader } from "./route";
@@ -34,6 +38,7 @@ test("render fake notes", async () => {
 
 test("render real notes (which are empty)", async () => {
   const email = "aaa@gmail.com";
+  await deleteUserByEmail(email);
 
   const user = await createUser(email, "myreallystrongpassword");
 
