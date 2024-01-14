@@ -1,17 +1,20 @@
 :root {
-  --slate-800: #1e293b;
-  --slate-600: #475569;
+  --black: #000000;
 
-  --blue-600:#2563eb;
-  --blue-500:#3b82f6;
+  --blue-600: #2563eb;
+  --blue-500: #3b82f6;
   --blue-100: #dbeafe;
+
+  --grey-50: #f9fafb;
+  --grey-500: #6b7280;
+  --grey-700: #374151;
 
   --red-700: #b91c1c;
 
+  --slate-800: #1e293b;
+  --slate-600: #475569;
+
   --white: #ffffff;
-  --grey-50:#f9fafb;
-  --black: #000000;
 
-  --font-family: 'ui-sans-serif';
-
+  --font-family: "ui-sans-serif";
 }
