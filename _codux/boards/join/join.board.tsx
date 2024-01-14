@@ -1,6 +1,6 @@
 import { createBoard } from "@wixc3/react-board";
 
-import { Join } from "../../../app/routes/join2/comp";
+import { Join } from "../../../app/routes/join/comp";
 import { ComponentWrapper } from "../../board-wrappers/component-wrapper";
 
 export default createBoard({
