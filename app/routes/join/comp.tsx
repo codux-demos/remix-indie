@@ -1,5 +1,4 @@
 import { Form, Link, useActionData, useSearchParams } from "@remix-run/react";
-import Classnames from "classnames";
 import { useEffect, useRef } from "react";
 
 import Comp_module from "./comp.module.css";
@@ -21,14 +20,14 @@ export function Join() {
   }, [actionData]);
 
   return (
-    <div className={Comp_module["page-container"]}>
-      <div className={Comp_module["form-container"]}>
-        <Form method="post" className={Comp_module.form}>
+    <div className="page-container">
+      <div className="form-container">
+        <Form method="post" className="form">
           <div>
             <label htmlFor="email" className={"form-text"}>
               Email address
             </label>
-            <div className={Comp_module["input-margin"]}>
+            <div className="input-margin">
               <input
                 ref={emailRef}
                 id="email"
@@ -40,13 +39,10 @@ export function Join() {
                 autoComplete="email"
                 aria-invalid={actionData?.errors?.email ? true : undefined}
                 aria-describedby="email-error"
-                className={Comp_module["form-input"]}
+                className="form-input"
               />
               {actionData?.errors?.email ? (
-                <div
-                  id="email-error"
-                  className={Comp_module["form-error-text"]}
-                >
+                <div id="email-error" className="form-error-text">
                   {actionData.errors.email}
                 </div>
               ) : null}
@@ -57,7 +53,7 @@ export function Join() {
             <label htmlFor="password" className="form-text">
               Password
             </label>
-            <div className={Comp_module["input-margin"]}>
+            <div className="input-margin">
               <input
                 id="password"
                 ref={passwordRef}
@@ -66,13 +62,10 @@ export function Join() {
                 autoComplete="new-password"
                 aria-invalid={actionData?.errors?.password ? true : undefined}
                 aria-describedby="password-error"
-                className={Comp_module["form-input"]}
+                className="form-input"
               />
               {actionData?.errors?.password ? (
-                <div
-                  id="password-error"
-                  className={Comp_module["form-error-text"]}
-                >
+                <div id="password-error" className="form-error-text">
                   {actionData.errors.password}
                 </div>
               ) : null}
@@ -80,13 +73,7 @@ export function Join() {
           </div>
 
           <input type="hidden" name="redirectTo" value={redirectTo} />
-          <button
-            type="submit"
-            className={Classnames(
-              Comp_module["submit-button"],
-              "button-action",
-            )}
-          >
+          <button type="submit" className="button-action">
             Create Account
           </button>
           <div className={Comp_module["sub-container"]}>
