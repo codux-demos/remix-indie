@@ -1,4 +1,5 @@
 import { Form, Link, useActionData, useSearchParams } from "@remix-run/react";
+import Classnames from "classnames";
 import { useEffect, useRef } from "react";
 
 import Comp_module from "./comp.module.css";
@@ -79,7 +80,13 @@ export function Join() {
           </div>
 
           <input type="hidden" name="redirectTo" value={redirectTo} />
-          <button type="submit" className={Comp_module["submit-button"]}>
+          <button
+            type="submit"
+            className={Classnames(
+              Comp_module["submit-button"],
+              "button-action",
+            )}
+          >
             Create Account
           </button>
           <div className={Comp_module["sub-container"]}>
