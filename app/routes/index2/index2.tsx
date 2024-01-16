@@ -18,39 +18,39 @@ export default function Index2() {
                             <img
                                 src="https://user-images.githubusercontent.com/1500684/157774694-99820c51-8165-4908-a031-34fc371ac0d6.jpg"
                                 alt="Sonic Youth On Stage"
-                                className={Index2_module['hero-image']}
+                                className={Index2_module["hero-image"]}
                             />
-                            <div className={Index2_module['image-filter']} />
+                            <div className={Index2_module["image-filter"]} />
                         </div>
                         <div className={Index2_module.container3}>
                             <h1 className={Index2_module.header}>
-                                <span className={Index2_module['header-content']}>
+                                <span className={Index2_module["header-content"]}>
                                     Indie Stack
                                 </span>
                             </h1>
-                            <p className={Index2_module['sub-header']}>
+                            <p className={Index2_module["sub-header"]}>
                                 Check the README.md file for instructions on how to get this
                                 project deployed.
                             </p>
-                            <div className={Index2_module['view-notes-container']}>
+                            <div className={Index2_module["view-notes-container"]}>
                                 {user ? (
                                     <Link
                                         to="/notes"
-                                        className={Index2_module['view-notes-button']}
+                                        className={Index2_module["view-notes-button"]}
                                     >
                                         View Notes for {user.email}
                                     </Link>
                                 ) : (
-                                    <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+                                    <div className={Index2_module['join-buttons']}>
                                         <Link
                                             to="/join"
-                                            className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
+                                            className={Index2_module['sign-up-button']}
                                         >
                                             Sign up
                                         </Link>
                                         <Link
                                             to="/login"
-                                            className="flex items-center justify-center rounded-md bg-yellow-500 px-4 py-3 font-medium text-white hover:bg-yellow-600"
+                                            className={Index2_module['log-in-button']}
                                         >
                                             Log In
                                         </Link>
@@ -61,7 +61,7 @@ export default function Index2() {
                                 <img
                                     src="https://user-images.githubusercontent.com/1500684/158298926-e45dafff-3544-4b69-96d6-d3bcc33fc76a.svg"
                                     alt="Remix"
-                                    className={Index2_module['remix-logo']}
+                                    className={Index2_module["remix-logo"]}
                                 />
                             </a>
                         </div>
@@ -69,7 +69,7 @@ export default function Index2() {
                 </div>
 
                 <div className={Index2_module.logos}>
-                    <div className="mt-6 flex flex-wrap justify-center gap-8">
+                    <div className={Index2_module['logos-layout']}>
                         {[
                             {
                                 src: "https://user-images.githubusercontent.com/1500684/157764397-ccd8ea10-b8aa-4772-a99b-35de937319e1.svg",
@@ -130,7 +130,7 @@ export default function Index2() {
                             <a
                                 key={img.href}
                                 href={img.href}
-                                className="flex h-16 w-32 justify-center p-1 grayscale transition hover:grayscale-0 focus:grayscale-0"
+                                className={Index2_module['logo-link']}
                             >
                                 <img alt={img.alt} src={img.src} className="object-contain" />
                             </a>
