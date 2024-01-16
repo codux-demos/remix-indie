@@ -6,7 +6,4 @@ export default createBoard({
   name: "LoginPage",
   Board: () => <PageWrapper path="/login" />,
   isSnippet: false,
-  environmentProps: {
-    canvasWidth: 448,
-  },
 });
