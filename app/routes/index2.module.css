@@ -1,0 +1,55 @@
+.root {
+  position: relative;
+  min-height: 100vh;
+  background: var(--white);
+}
+
+.content,
+.container1 {
+  position: relative;
+}
+
+.hero {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80rem;
+}
+
+.logos {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero,
+  .logos {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .container1 {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero,
+  .logos {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
