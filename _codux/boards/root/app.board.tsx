@@ -6,7 +6,4 @@ export default createBoard({
     name: "App",
     Board: () => <PageWrapper path="/" />,
     isSnippet: true,
-    environmentProps: {
-        windowWidth: 648
-    }
 });

@@ -1,6 +1,6 @@
 import { createRemixStub } from "@remix-run/testing";
 
-import Index2 from "~/routes/index2";
+import Index2 from "~/routes/index2/index2";
 
 import { NotesPage } from "../../app/routes/notes/comp";
 import {

@@ -14,29 +14,29 @@ export default function Index2() {
             <div className={Index2_module.content}>
                 <div className={Index2_module.hero}>
                     <div className={Index2_module.container1}>
-                        <div className="absolute inset-0">
+                        <div className={Index2_module.container2}>
                             <img
-                                className="h-full w-full object-cover"
                                 src="https://user-images.githubusercontent.com/1500684/157774694-99820c51-8165-4908-a031-34fc371ac0d6.jpg"
                                 alt="Sonic Youth On Stage"
+                                className={Index2_module['hero-image']}
                             />
-                            <div className="absolute inset-0 bg-[color:rgba(254,204,27,0.5)] mix-blend-multiply" />
+                            <div className={Index2_module['image-filter']} />
                         </div>
-                        <div className="relative px-4 pb-8 pt-16 sm:px-6 sm:pb-14 sm:pt-24 lg:px-8 lg:pb-20 lg:pt-32">
-                            <h1 className="text-center text-6xl font-extrabold tracking-tight sm:text-8xl lg:text-9xl">
-                                <span className="block uppercase text-yellow-500 drop-shadow-md">
+                        <div className={Index2_module.container3}>
+                            <h1 className={Index2_module.header}>
+                                <span className={Index2_module['header-content']}>
                                     Indie Stack
                                 </span>
                             </h1>
-                            <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
+                            <p className={Index2_module['sub-header']}>
                                 Check the README.md file for instructions on how to get this
                                 project deployed.
                             </p>
-                            <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+                            <div className={Index2_module['view-notes-container']}>
                                 {user ? (
                                     <Link
                                         to="/notes"
-                                        className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
+                                        className={Index2_module['view-notes-button']}
                                     >
                                         View Notes for {user.email}
                                     </Link>
@@ -61,7 +61,7 @@ export default function Index2() {
                                 <img
                                     src="https://user-images.githubusercontent.com/1500684/158298926-e45dafff-3544-4b69-96d6-d3bcc33fc76a.svg"
                                     alt="Remix"
-                                    className="mx-auto mt-16 w-full max-w-[12rem] md:max-w-[16rem]"
+                                    className={Index2_module['remix-logo']}
                                 />
                             </a>
                         </div>
