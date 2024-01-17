@@ -1,6 +1,7 @@
 import { createRemixStub } from "@remix-run/testing";
 
 import Index2 from "~/routes/index2/index2";
+import { LoginPage } from "~/routes/login/comp";
 
 import { NotesPage } from "../../app/routes/notes/comp";
 import {
@@ -45,6 +46,11 @@ export function getRouter(): Parameters<typeof createRemixStub>[0] {
               Component: NotesNew,
             },
           ],
+        },
+        {
+          path: "/login",
+          Component: LoginPage,
+          loader: () => ({}),
         },
       ],
     },

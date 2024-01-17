@@ -4,9 +4,9 @@ import { useEffect, useRef } from "react";
 import Comp_module from "./comp.module.css";
 import { action } from "./route";
 
-export function Join() {
+export function LoginPage() {
   const [searchParams] = useSearchParams();
-  const redirectTo = searchParams.get("redirectTo") ?? undefined;
+  const redirectTo = searchParams.get("redirectTo") || "/notes";
   const actionData = useActionData<typeof action>();
   const emailRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
@@ -24,7 +24,7 @@ export function Join() {
       <div className="form-container">
         <Form method="post" className="form">
           <div>
-            <label htmlFor="email" className={"form-text"}>
+            <label htmlFor="email" className="form-text">
               Email address
             </label>
             <div className="input-margin">
@@ -59,7 +59,7 @@ export function Join() {
                 ref={passwordRef}
                 name="password"
                 type="password"
-                autoComplete="new-password"
+                autoComplete="current-password"
                 aria-invalid={actionData?.errors?.password ? true : undefined}
                 aria-describedby="password-error"
                 className="form-input"
@@ -74,19 +74,33 @@ export function Join() {
 
           <input type="hidden" name="redirectTo" value={redirectTo} />
           <button type="submit" className="button-action">
-            Create Account
+            Log in
           </button>
           <div className={Comp_module["sub-container"]}>
+            <div className={Comp_module["remember-me"]}>
+              <input
+                id="remember"
+                name="remember"
+                type="checkbox"
+                className={Comp_module["form-checkbox"]}
+              />
+              <label
+                htmlFor="remember"
+                className={Comp_module["remember-me-text"]}
+              >
+                Remember me
+              </label>
+            </div>
             <div className="sub-text">
-              Already have an account?{" "}
+              Don&apos;t have an account?{" "}
               <Link
                 to={{
-                  pathname: "/login",
+                  pathname: "/join",
                   search: searchParams.toString(),
                 }}
                 className="link"
               >
-                Log in
+                Sign up
               </Link>
             </div>
           </div>
