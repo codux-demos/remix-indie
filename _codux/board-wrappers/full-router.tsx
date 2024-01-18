@@ -16,8 +16,14 @@ export function getRouter(): Parameters<typeof createRemixStub>[0] {
     {
       id: "root",
       path: "/",
-      Component: _Index,
+      loader: () => ({
+        user: { email: "aaa@gmail.com" },
+      }),
       children: [
+        {
+          index: true,
+          Component: _Index,
+        },
         {
           path: "/notes",
           Component: NotesPage,
