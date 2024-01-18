@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
+import cx from "classnames";
 
 import { useOptionalUser } from "~/utils";
 
@@ -42,10 +43,22 @@ export default function Index2() {
                   </Link>
                 ) : (
                   <div className={Index_module["join-buttons"]}>
-                    <Link to="/join" className={Index_module["sign-up-button"]}>
+                    <Link
+                      to="/join"
+                      className={cx(
+                        Index_module.button,
+                        Index_module["sign-up-button"],
+                      )}
+                    >
                       Sign up
                     </Link>
-                    <Link to="/login" className={Index_module["log-in-button"]}>
+                    <Link
+                      to="/login"
+                      className={cx(
+                        Index_module.button,
+                        Index_module["log-in-button"],
+                      )}
+                    >
                       Log In
                     </Link>
                   </div>

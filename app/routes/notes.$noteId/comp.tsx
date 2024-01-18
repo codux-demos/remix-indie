@@ -4,7 +4,7 @@ import {
   useLoaderData,
   useRouteError,
 } from "@remix-run/react";
-import Classnames from "classnames";
+import cx from "classnames";
 
 import styles from "./comp.module.css";
 import type { loader } from "./route";
@@ -12,17 +12,13 @@ import type { loader } from "./route";
 export function NoteDetailsPage() {
   const data = useLoaderData<typeof loader>();
 
-  console.log("ASDFSDF", data.note.body);
   return (
     <div>
       <h3 className={styles.title}>{data.note.title}</h3>
       <p className={styles.text}>{data.note.body}</p>
       <hr />
       <Form method="post">
-        <button
-          type="submit"
-          className={Classnames(styles.delete, "button-action")}
-        >
+        <button type="submit" className={cx(styles.delete, "button-action")}>
           Delete
         </button>
       </Form>
