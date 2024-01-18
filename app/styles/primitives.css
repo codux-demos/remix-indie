@@ -18,5 +18,10 @@
 
   --white: #ffffff;
 
+  --yellow-50: #fefce8;
+  --yellow-500: #eab208;
+  --yellow-600: #ca8a04;
+  --yellow-700: #a16207;
+
   --font-family: "ui-sans-serif";
 }

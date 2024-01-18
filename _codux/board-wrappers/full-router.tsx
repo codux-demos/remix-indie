@@ -1,5 +1,6 @@
 import { createRemixStub } from "@remix-run/testing";
 
+import { Home } from "~/routes/_index/comp";
 import { LoginPage } from "~/routes/login/comp";
 
 import { NotesPage } from "../../app/routes/notes/comp";
@@ -15,12 +16,14 @@ export function getRouter(): Parameters<typeof createRemixStub>[0] {
     {
       id: "root",
       path: "/",
-      loader: () => {
-        return {
-          user: { email: "aaa@gmail.com" },
-        };
-      },
+      loader: () => ({
+        user: { email: "aaa@gmail.com" },
+      }),
       children: [
+        {
+          index: true,
+          Component: Home,
+        },
         {
           path: "/notes",
           Component: NotesPage,

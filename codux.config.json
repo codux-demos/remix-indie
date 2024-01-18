@@ -5,6 +5,7 @@
     "solution": "css modules"
   },
   "boardGlobalSetup": "./_codux/board-setup.ts",
+  "componentsDiscovery": { "exclude": ["./_codux/templates/**"] },
   "resolve": {
     "alias": {
       "~": "app",
