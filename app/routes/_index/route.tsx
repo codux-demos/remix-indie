@@ -13,8 +13,8 @@ export default function Index2() {
     <main className={Index_module.root}>
       <div className={Index_module.content}>
         <div className={Index_module.hero}>
-          <div className={Index_module.container1}>
-            <div className={Index_module.container2}>
+          <div className={Index_module["hero-inner"]}>
+            <div className={Index_module["hero-image-container"]}>
               <img
                 src="https://user-images.githubusercontent.com/1500684/157774694-99820c51-8165-4908-a031-34fc371ac0d6.jpg"
                 alt="Sonic Youth On Stage"
@@ -22,7 +22,7 @@ export default function Index2() {
               />
               <div className={Index_module["image-filter"]} />
             </div>
-            <div className={Index_module.container3}>
+            <div className={Index_module["hero-content"]}>
               <h1 className={Index_module.header}>
                 <span className={Index_module["header-content"]}>
                   Indie Stack
