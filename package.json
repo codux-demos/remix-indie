@@ -80,9 +80,9 @@
     "start-server-and-test": "^2.0.4",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.2.2",
+    "typescript": "^5.5.2",
     "vite": "^4.5.0",
-    "vite-tsconfig-paths": "^4.2.1",
+    "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^0.34.6"
   },
   "engines": {
